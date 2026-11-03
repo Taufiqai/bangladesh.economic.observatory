@@ -1,0 +1,21 @@
+{
+  "name": "bd-economic-observatory-secure",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Bangladesh Economic Observatory behind a named-user access gate (password + authenticator code, signed sessions, audit log, watermark).",
+  "scripts": {
+    "start": "node server.mjs",
+    "test": "node test/e2e.mjs",
+    "user": "node tools/users.mjs"
+  },
+  "dependencies": {
+    "@vercel/functions": "^3.1.0"
+  },
+  "devDependencies": {
+    "qrcode": "^1.5.4"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
